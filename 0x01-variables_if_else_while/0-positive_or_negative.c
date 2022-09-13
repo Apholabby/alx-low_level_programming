@@ -6,7 +6,6 @@
 
 /**
  * main - Entry point
- *
  * Description : main prints a positive or negative number
  * Return : Always 0 (success)
  */
