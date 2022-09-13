@@ -4,7 +4,12 @@
 
 /* more headers goes there */
 
-
+/**
+ * main - Entry point
+ *
+ * Description : main prints a positive or negative number
+ * Return : Always 0 (success)
+ */
 
 /* betty style doc for function main goes there */
 
@@ -24,4 +29,4 @@ int main(void)
 		printf("%d is negative\n", n);
 	}
 	return (0);
-}	
+}
