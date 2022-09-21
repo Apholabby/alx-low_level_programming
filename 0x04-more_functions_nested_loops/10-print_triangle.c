@@ -2,40 +2,43 @@
 /**
  * print_triangle - print a triangle
  * @size : size of triangle
- *
+ * Return: void
  */
 void print_triangle(int size)
 {
-/**
- * int i: counter for loop
- * int margin: records the amount of white space
- * int dis: used for size
- * int to_print: used to tell how many # to be printed
- */
-	int i, margin, dis, to_print;
+	int i = 1, a = 0;
 
-	if (size <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-		return;
+		if (size == 1)
+		{
+			_putchar(35);
+			_putchar('\n');
+		}
+		else
+		{
+			while (i <= size)
+			{
+				a = 0;
+				while (a < size - i)
+				{
+					_putchar(' ');
+					a++;
+				}
+				a = 0;
+				while (a < i)
+				{
+					_putchar(35);
+					a++;
+				}
+				_putchar('\n');
+				i++;
+			}
+		}
 	}
-
-	dis = size - 1;
-	for (i = 0 ; i < size; i++)
+	else
 	{
-		margin = 0;
-		while (margin < (dis - i))
-		{
-			_putchar(32);
-			margin++;
-		}
-		to_print = size - margin;
-
-		while (to_print > 0)
-		{
-			_putchar('#');
-			t0_print--;
-		}
 		_putchar('\n');
 	}
 }
+
