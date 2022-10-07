@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 /**
  * malloc_checked - a function that allocates memeory and checks its success
  * @b: size of memory to allocate
