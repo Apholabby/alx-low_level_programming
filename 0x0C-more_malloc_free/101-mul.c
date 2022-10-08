@@ -47,6 +47,21 @@ char *create_xarray(int size)
 
 	return (array);
 }
+/**
+ * iterate_zeroes - iterates through a string of numbers containing
+ * leading zeroes until it hits a non zero number
+ * @str: the string of numbers to iterate through
+ * Return: a pointer to the next non zero element
+ */
+
+char *iterate_zeroes(char *str)
+{
+	while (*str && *str == '0')
+		str++;
+
+	return (str);
+}
+
 
 /**
  * get_digit - converts a digit character to a corresponding int
